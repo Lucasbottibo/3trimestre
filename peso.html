@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peso do aluno</title>
 </head>
@@ -16,22 +17,21 @@
         </p>
 
         <p>Sexo:
-            <input type="radio" id="inMasculino" required> Masculino
-            <input type="radio" id="inFemenino" required> Femenino
+            <input type="radio" name="sexo" id="inMasculino" required> Masculino
+            <input type="radio" name="sexo" id="inFemenino" required> Femenino
 
         </p>
 
         <p>Altura:
-            <input type="number" id="inAltura" min="0" step="0.1">
+            <input type="number" min="0" step="0.1" id="inAltura" required>
 
         </p>
 
             <input type="submit" value="Calcular Peso Ideal">
-            <input type="submit" value="Limpar Campo">
+            <input type="reset" value="Limpar Campo">
 
     </form>
     <h3></h3>
-    <h4></h4>
-    <script> src="peso.js"</script>
+    <script src="peso.js"></script>
 </body>
 </html>
