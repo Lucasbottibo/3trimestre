@@ -1,10 +1,10 @@
 //criar referencia ao form e elementos de resposta do programa
 
 const form = document.querySelector("form")
-const form = document.querySelector("h3")
+const resp = document.querySelector("h3")
 
 //ouvinte
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) =>{
     e.preventDefault()
 
     const nome = form.inNome.value
@@ -25,6 +25,6 @@ form.addEventListener("submit", (e) => {
 
 //segundo ouvinte. limpa o conteúdo de h3
 
-form.addEventListener("reset", (e) => {
+form.addEventListener("reset", (e) =>{
     resp.innerText = ""     //limpa o conteúdo de h3
 })
